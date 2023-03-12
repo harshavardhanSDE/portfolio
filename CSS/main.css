@@ -1,0 +1,254 @@
+/* Normalizing */
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+/* body */
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+}
+/* Responsive Web design: using Flexbox */
+
+/* master-container */
+.master-container {
+	padding-top: 10%;
+	margin: 0vh 10vw;
+	width: 80vw;
+	height: 100vh;
+	display: flexbox;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* For desktop */
+
+.profile {
+	margin: 0% 25%;
+}
+.profile > hr {
+	width: 20px;
+}
+/* hero1 > hero-text */
+.hero1 {
+	margin: 10vh auto;
+	width: 100%;
+	max-height: 30%;
+	display: flex;
+	flex-direction: row;
+}
+/* Web layout for mobile devices. */
+@media screen and (max-width: 1000px) {
+	.hero1 {
+		margin: 10vh auto;
+		width: 100%;
+		max-height: 30%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+.hero-text {
+	height: 100%;
+	width: 50%;
+	margin: auto 0;
+	padding-left: 10%;
+	display: flexbox;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 47px;
+}
+.animated-text {
+	font-size: 65px;
+	font-weight: bolder;
+	line-height: 50px;
+}
+.hero-img1 {
+	width: 50%;
+}
+span {
+	border-right: 0.05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
+}
+
+/* hero2 */
+
+.hero2 {
+	margin: 10vh auto;
+	width: 100%;
+	max-height: 30%;
+	display: flex;
+	flex-direction: row;
+}
+@media screen and (max-width: 1000px) {
+	.hero2 {
+		margin: 10vh auto;
+		width: 100%;
+		max-height: 30%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* content */
+
+.content {
+	width: 100%;
+	display: flexbox;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.interests {
+	margin: 10% 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* card-stack */
+.card-stack {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+	.card-stack {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* card */
+.card {
+	max-width: 30%;
+	margin: 2%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+}
+/*  */
+@media screen and (max-width: 1000px) {
+	.card {
+		max-width: 50%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		border-radius: 30px;
+		transition: box-shadow 0.3s;
+	}
+}
+.logo > img {
+	width: 120px;
+}
+/* text */
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.card-title {
+	font-weight: bolder;
+	font-size: 20px;
+}
+.card-des {
+	font-weight: medium;
+	font-size: 13px;
+}
+
+/* projects */
+.projects {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.project-title {
+	font-size: 40px;
+	font-weight: bolder;
+}
+.project-content {
+	margin: 3% 0;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.project-description {
+	margin: 0 40px;
+}
+.project-title-1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.project-des {
+	font-size: 10px;
+	font-weight: medium;
+}
+.illustration > img {
+	width: 100%;
+}
+a {
+	color: blue;
+	line-height: 10px;
+	text-decoration: underline;
+}
+.footer {
+	margin: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.social-media-logos {
+	margin-bottom: 5%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+	.social-media-logos {
+		flex-direction: column;
+	}
+}
+.m-logo > img {
+	width: 34px;
+	margin: 10px;
+}
+.m-logo > a {
+	text-decoration: none;
+	color: grey;
+}
+.m-logo {
+	width: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: auto;
+}
